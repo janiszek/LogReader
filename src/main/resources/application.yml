@@ -1,0 +1,14 @@
+# Datasource HSQLDB
+spring:
+  datasource:
+    url: jdbc:hsqldb:file:./logDB
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.HSQLDialect
+    hibernate.ddl-auto: create
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
